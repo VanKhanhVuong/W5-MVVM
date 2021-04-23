@@ -15,10 +15,9 @@
 		66A39FAC262846B600527F88 /* HomeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66A39FAB262846B600527F88 /* HomeView.storyboard */; };
 		66D87ECD26310DE600AC9D4F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D87ECC26310DE600AC9D4F /* User.swift */; };
 		66D87ED52631119B00AC9D4F /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D87ED42631119B00AC9D4F /* APIService.swift */; };
-		66D87EEB263128D900AC9D4F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D87EEA263128D900AC9D4F /* HomeViewModel.swift */; };
+		66D87EEB263128D900AC9D4F /* HomeViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D87EEA263128D900AC9D4F /* HomeViewModels.swift */; };
 		66D87EF32631718800AC9D4F /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D87EF12631718800AC9D4F /* MyTableViewCell.swift */; };
 		66D87EF42631718800AC9D4F /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66D87EF22631718800AC9D4F /* MyTableViewCell.xib */; };
-		66D87EF8263171C900AC9D4F /* MyTableViewCellsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D87EF7263171C900AC9D4F /* MyTableViewCellsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,10 +31,9 @@
 		66A39FAB262846B600527F88 /* HomeView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeView.storyboard; sourceTree = "<group>"; };
 		66D87ECC26310DE600AC9D4F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		66D87ED42631119B00AC9D4F /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
-		66D87EEA263128D900AC9D4F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		66D87EEA263128D900AC9D4F /* HomeViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModels.swift; sourceTree = "<group>"; };
 		66D87EF12631718800AC9D4F /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		66D87EF22631718800AC9D4F /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
-		66D87EF7263171C900AC9D4F /* MyTableViewCellsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCellsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +92,7 @@
 				66D87ECB26310A3900AC9D4F /* Part */,
 				66A39FA1262845A500527F88 /* HomeViewController.swift */,
 				66A39FAB262846B600527F88 /* HomeView.storyboard */,
-				66D87EEA263128D900AC9D4F /* HomeViewModel.swift */,
+				66D87EEA263128D900AC9D4F /* HomeViewModels.swift */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -144,7 +142,6 @@
 			children = (
 				66D87EF12631718800AC9D4F /* MyTableViewCell.swift */,
 				66D87EF22631718800AC9D4F /* MyTableViewCell.xib */,
-				66D87EF7263171C900AC9D4F /* MyTableViewCellsModel.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -222,8 +219,7 @@
 			files = (
 				66D87EF32631718800AC9D4F /* MyTableViewCell.swift in Sources */,
 				66D87ECD26310DE600AC9D4F /* User.swift in Sources */,
-				66D87EEB263128D900AC9D4F /* HomeViewModel.swift in Sources */,
-				66D87EF8263171C900AC9D4F /* MyTableViewCellsModel.swift in Sources */,
+				66D87EEB263128D900AC9D4F /* HomeViewModels.swift in Sources */,
 				66A39F84262844F100527F88 /* AppDelegate.swift in Sources */,
 				66A39F86262844F100527F88 /* SceneDelegate.swift in Sources */,
 				66D87ED52631119B00AC9D4F /* APIService.swift in Sources */,

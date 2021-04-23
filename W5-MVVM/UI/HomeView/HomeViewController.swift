@@ -10,8 +10,7 @@ import UIKit
 class HomeViewController: UIViewController {
     @IBOutlet weak var userTableView: UITableView!
     let identifier = "MyTableViewCell"
-    var viewModel = HomeViewModel()
-    var arrayUserFormApi: [HomeViewModel] = []
+    var viewModel = HomeViewModels()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,19 +29,18 @@ class HomeViewController: UIViewController {
 }
 extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arrayUserFormApi.count
+        return viewModel.arrayUser.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as? MyTableViewCell else { return UITableViewCell() }
-        let model = arrayUserFormApi[indexPath.row]
-        cell.bildData(viewModel: MyTableViewCellsModels(name: model.name, age: model.age, gender: model.gender))
+        let model = viewModel.arrayUser[indexPath.row]
+        cell.bildData(viewModel: model)
         return cell
     }
 }
-extension HomeViewController: HomeViewModelDelegate {
-    func passData(arrayUser: [HomeViewModel]) {
-        self.arrayUserFormApi = arrayUser
+extension HomeViewController: HomeViewModelEvents {
+    func passData() {
         DispatchQueue.main.async {
             self.userTableView.reloadData()
         }
