@@ -15,7 +15,7 @@ class MyTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-    func bildData(viewModel : MyTableViewCellsModels) {
+    func bildData(viewModel : HomeViewModels) {
         self.nameLabel.text = "Name: " + viewModel.name
         self.genderLabel.text = "Gender: " + viewModel.gender
         self.ageLabel.text = "Age: \(viewModel.age)"
